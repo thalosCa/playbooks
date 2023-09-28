@@ -1,6 +1,6 @@
 ---
 - name: Iniciar serviço do insights-client
-  hosts: Hosts_vm
+  hosts: rhel001.itone.com.br
   become: yes  # Para executar com privilégios de superusuário
 
   tasks:
