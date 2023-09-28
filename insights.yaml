@@ -1,0 +1,16 @@
+---
+- name: Iniciar serviço do insights-client
+  hosts: seu_host
+  become: yes  # Para executar com privilégios de superusuário
+
+  tasks:
+    - name: Verificar o status do serviço
+      service:
+        name: insights-client
+        state: started
+      ignore_errors: yes  # Ignora erros se o serviço já estiver em execução
+
+    - name: Iniciar o serviço
+      service:
+        name: insights-client
+        state: started
