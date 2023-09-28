@@ -1,6 +1,6 @@
 ---
 - name: Iniciar serviço do insights-client
-  hosts: seu_host
+  hosts: Hosts_vm
   become: yes  # Para executar com privilégios de superusuário
 
   tasks:
